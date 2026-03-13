@@ -13,7 +13,7 @@ pub fn wait_for_enter() {
 
 pub fn show_menu(title: &str, items: &[&str], exit: bool) -> u32 {
     clear_console();
-    let complete = String::from("Rust Masterclass :: ") + title + "\n\n";
+    let complete = String::from("Rust Studies :: ") + title + "\n\n";
     println!("{}", complete);
     println!("{}", String::from("=").repeat(complete.len()));
 
