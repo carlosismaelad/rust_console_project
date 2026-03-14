@@ -1,6 +1,7 @@
 mod fundamentals;
 mod types;
 mod utils;
+mod conditional_structures;
 
 use std::process::exit;
 
@@ -10,7 +11,7 @@ fn main() {
         let items = [
             "Fundamentals",
             "Types",
-            "Controller",
+            "Conditional Structures",
             "Functions",
             "Ownership",
         ];
@@ -21,7 +22,7 @@ fn main() {
         match selection {
             1 => fundamentals::execute(),
             2 => types::execute(),
-            3 => println!("3"),
+            3 => conditional_structures::execute(),
             4 => println!("4"),
             5 => println!("5"),
             _ => exit(0),
