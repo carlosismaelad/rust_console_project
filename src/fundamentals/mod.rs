@@ -1,3 +1,7 @@
+mod first;
+mod operators;
+mod variables;
+
 use crate::utils::terminal::{clear_console, show_menu, wait_for_enter};
 
 pub fn execute() {
@@ -18,7 +22,14 @@ pub fn execute() {
         clear_console();
 
         match selection {
-            1 => println!("First Example"),
+            1 => first::example(),
+            2 => variables::immutable(),
+            3 => variables::mutable(),
+            4 => variables::constant(),
+            5 => variables::shadowing(),
+            6 => operators::arithmetic(),
+            7 => operators::relational(),
+            8 => operators::logical(),
             _ => break,
         }
 

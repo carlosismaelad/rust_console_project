@@ -1,4 +1,5 @@
 mod fundamentals;
+mod types;
 mod utils;
 
 use std::process::exit;
@@ -19,7 +20,7 @@ fn main() {
 
         match selection {
             1 => fundamentals::execute(),
-            2 => println!("2"),
+            2 => types::execute(),
             3 => println!("3"),
             4 => println!("4"),
             5 => println!("5"),
