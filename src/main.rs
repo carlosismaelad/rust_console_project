@@ -2,6 +2,7 @@ mod fundamentals;
 mod types;
 mod utils;
 mod conditional_structures;
+mod functions;
 
 use std::process::exit;
 
@@ -23,7 +24,7 @@ fn main() {
             1 => fundamentals::execute(),
             2 => types::execute(),
             3 => conditional_structures::execute(),
-            4 => println!("4"),
+            4 => functions::execute(),
             5 => println!("5"),
             _ => exit(0),
         }
