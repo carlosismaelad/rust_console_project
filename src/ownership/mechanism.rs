@@ -31,7 +31,7 @@ pub fn example_b() {
 
 #[allow(clippy::let_and_return)]
 fn new_name() -> String {
-    let name = String::from("Maria");
+    let name = String::from("Clara");
     name // ownership of the value is moved to the caller function
 }
 

@@ -37,7 +37,7 @@ pub fn move_example() {
 }
 
 pub fn clone_example() {
-    let s1 = String::from("Olá");
+    let s1 = String::from("Hello");
 
     // Clone needs to be explicitly called
     let s2 = s1.clone();

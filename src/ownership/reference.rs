@@ -4,13 +4,13 @@
 
 pub fn immutable_ref_example() {
     let text = String::from(
-        "Rust é uma linguagem de programação de sistemas 
-        que roda incrivelmente rápido, previne falhas de 
-        segmentação e garante segurança concorrente.",
+        "Rust is a modern systems programming language 
+        that runs incredibly fast, prevents segmentation faults, 
+        and guarantees concurrent safety.",
     );
 
     let word_count = calculate_word_count(&text);
-    println!("O texto {} tem {} palavras", text, word_count);
+    println!("The text '{}' has {} words", text, word_count);
 }
 
 #[allow(clippy::ptr_arg)]
@@ -24,7 +24,7 @@ fn calculate_word_count(text: &String) -> usize {
 pub fn mutable_ref_example_a() {
     let name = String::from("João");
     last_name(&name);
-    println!("Nome: {}", name);
+    println!("Name: {}", name);
 }
 
 #[allow(clippy::ptr_arg)]
@@ -37,7 +37,7 @@ fn last_name(text: &String) {
 pub fn mutable_ref_example_b() {
     let mut name = String::from("João");
     mutable_last_name(&mut name);
-    println!("Nome: {}", name);
+    println!("Name: {}", name);
 
     let n1 = &mut name;
     println!("{}", n1);
