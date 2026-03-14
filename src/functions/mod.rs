@@ -1,7 +1,7 @@
 mod fns;
 mod lambda;
 
-use crate::utils::terminal::{wait_for_enter, show_menu, clear_console};
+use crate::utils::terminal::{clear_console, show_menu, wait_for_enter};
 
 pub fn execute() {
     loop {
