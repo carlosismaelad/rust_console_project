@@ -1,4 +1,4 @@
-// Annotation used to silence the warning that 
+// Annotation used to silence the warning that
 // instructs to use a match instead of nested if statements:
 // `if` can be rewritten with `match` (clippy::comparison_chain)
 #[allow(clippy::comparison_chain)]
